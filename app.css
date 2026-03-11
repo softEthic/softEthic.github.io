@@ -1,0 +1,81 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: #FFA500; /* orange background */
+}
+
+p:hover {
+color: #3b82f6;;
+}
+
+.profile-img {
+  width: 150px;
+  height: auto;
+}
+
+/* Navigation */
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #00adb5;
+}
+
+
+/* Hero Section */
+
+.hero {
+  text-align: center;
+  padding: 100px;
+  background: #FFA500;
+  color: #fff;
+}
+
+
+/* Sections */
+
+section {
+  padding: 50px;
+}
+
+
+/* Projects */
+
+.projects-container {
+  display: flex;
+  gap: 20px;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+
+/* Footer */
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
