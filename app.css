@@ -4,8 +4,24 @@ body {
   background-color: #FFA500; /* orange background */
 }
 
+#home {
+background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+}
+
+#about {
+  background: linear-gradient(to right, #182848, #4b6cb7); 
+  color: #fff;
+}
+
+#projects {
+  background: linear-gradient(to right, #c99846, #554023);
+}
+
+#contact {
+  background: linear-gradient(to right, #023c0d, #5bb226, #98d0c1, #de512b, #0c0c6d);
+}
 p:hover {
-color: #3b82f6;;
+color: #00FF00;;
 }
 
 .profile-img {
@@ -16,12 +32,11 @@ color: #3b82f6;;
 /* Navigation */
 
 header {
-  background: #222;
+  background: url('assets/images/portfoliobkg.jpg');
+  background-size: cover;
+  padding: 80px 20px;
   color: #fff;
-  padding: 20px;
-
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
 }
 
 header a {
@@ -51,6 +66,27 @@ section {
   padding: 50px;
 }
 
+.skills-logos {
+display: flex;
+gap: 20px;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+max-width: 100%;
+}
+
+.skills-logos img {
+width: 50px;
+height: 50px;
+object-fit: contain;
+display: block;
+margin: 0;
+transition: transform 0.3s;
+}
+
+.skills-logos img:hover {
+transform: scale(1.2);
+}
 
 /* Projects */
 
@@ -60,10 +96,36 @@ section {
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 1px solid #ccc;
   padding: 20px;
   width: 250px;
   border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.project-card img {
+width: 100%;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+.project-card h3 {
+margin: 10px 0 5px 0;
+}
+
+.project-card p {
+margin-bottom: 10px;
+}
+
+.project-card a {
+display: inline-block;
+margin: 5px;
+text-decoration: none;
+color: #00bfff;
 }
 
 .project-card:hover {
