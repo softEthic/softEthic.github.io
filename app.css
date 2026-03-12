@@ -132,7 +132,10 @@ color: #00bfff;
   transform: scale(1.05);
 }
 
-
+img {
+width: 60px;
+height: auto;
+}
 
 
 footer {
